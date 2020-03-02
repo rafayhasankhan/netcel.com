@@ -2,7 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif; 
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
     background-image: linear-gradient(to bottom, black, transparent), url("images/netcel-hero.jpg");
 
 }
@@ -12,11 +12,12 @@ header {
     justify-content: space-between;
     padding: 15px 25px 0px 25px;
     background-color: white;
+    width: auto;
 
 }
 
 img {
-    height: 84px;
+    height: 88px;
     width: 128px;
 }
 
@@ -35,51 +36,62 @@ a {
     color: black;
     font-size: 15px;
 }
+
 section {
     background-size: 100%;
     height: 650px;
-    color: white;   
+    color: white;
     display: flex;
     flex-direction: column;
+    padding: 0px 40px;
     
 }
 
-section h1 {
+.head1 {
     font-weight: 300;
     font-size: 60px;
-    /* line-height: 66px; */
+    line-height: 66px;
     border: rebeccapurple 1px solid;
 
 }
 
-h2 {
+h3 {
     font-weight: 300;
     font-size: 30px;
     line-height: 33px;
-    border: springgreen 1px solid;
+    /* border: springgreen 1px solid; */
     width: 65%;
 }
 
 .sec1 {
     display: flex;
-    
     justify-content: center;
     color: white;
-    width: 80%;
+    width: 100%;
     align-items: center;
 
 }
 
-.sec1 div {
+/* .sec1 div {
     display: flex;
     flex-direction: column;
-}
+    width: ;
+} */
 
-.sec1 div h1 {
+.sec1 div h2 {
     font-size: 35px;
     font-weight: 300;
     width: 60%;
+    border: 1px solid black;
 }
+
+.sec1 div p {
+    font-size: 20px;
+    border: black 1px solid;
+    font-weight: 300;
+
+}
+
 #blue{
     background-color: #385D77;
 }
