@@ -3,55 +3,89 @@ body {
     padding: 0px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif; 
     /* padding: 0px 15px; */
-    background-image: linear-gradient(to bottom, black, transparent), url("images/netcel-hero.jpg");
+    /* background-size: 100%;
+    background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+
 
 }
 
+/* Header (Logo & Navbar)   */
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 15px 25px 0px 25px;
+    justify-content: space-between  ;
     background-color: white;
-    width: auto;
+    width: 100%;
+    height: 121px;
+    border: 1px solid black;
+    z-index: 1;
+    position: fixed;
+    /* padding: 0px 25px 0px 25px; */
+    /* position: absolute; */
 
 }
 
-img {
-    height: 88px;
+/* Navbar NETCEL Web Logo  */
+.logo {
+    height: 86px;
     width: 128px;
+    margin :15px 30px;
+    position: relative;
+    left: 25px;   
 }
 
+/* Nav Items  */
+nav {
+    /* border: red 2px solid; */
+    align-self: center;
+    position: relative;
+    right: 25px;
+}
+
+/* Nav items ul list styling */
 ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    align-items: center;
+
 }
+
+/* Individual List Item styling */
 
 li {
-    padding: 20px;
+    padding: 30px 18px;
 }
 
-a {
+li a {
     text-decoration: none;
-    color: black;
+    color: dimgray;
     font-size: 15px;
 }
 
-section {
+/* First Section Styling  */
+.sec1 {
+    background-image: linear-gradient(to bottom, black, transparent, transparent), url("images/netcel-hero.jpg");
+    /* background-position: center; */
     background-size: 100%;
-    height: 650px;
+    background-repeat: no-repeat;
+    height: 800px;
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 0px 40px;
-    
+    padding: 40px 30px 0px 30px;
+    border-left: white 5px solid;
+    border-right: white 5px solid;
+    /* To add gap between header and section */
+    top: 123px;
+    position: relative;  
 }
 
 .head1 {
     font-weight: 300;
     font-size: 60px;
     line-height: 66px;
-    border: rebeccapurple 1px solid;
+    margin-bottom: 25px;
 
 }
 
@@ -59,36 +93,38 @@ h3 {
     font-weight: 300;
     font-size: 30px;
     line-height: 33px;
-    /* border: springgreen 1px solid; */
-    width: 65%;
+    width: 60%;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
-.sec1 {
+.cards {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     color: white;
-    width: 100%;
-    align-items: center;
-
 }
 
-/* .sec1 div {
+.cards div {
     display: flex;
     flex-direction: column;
-    width: ;
-} */
-
-.sec1 div h2 {
-    font-size: 35px;
-    font-weight: 300;
-    width: 60%;
-    border: 1px solid black;
+    justify-content: center;
+    padding: 40px 60px ;
+    height: 350px;
 }
 
-.sec1 div p {
-    font-size: 20px;
-    border: black 1px solid;
+.cards div h2 {
+    font-size: 35px;
     font-weight: 300;
+    width: 70%;
+    margin-top: 0px;
+}
+
+.cards div p {
+    font-size: 20px;
+    font-weight: 300;
+    width: 95%;
+    margin: 0px;
 
 }
 
@@ -101,3 +137,13 @@ h3 {
 #green{
     background-color: #00947E;
 }
+
+.sec2 {
+    background-color: #f3f3f3;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
